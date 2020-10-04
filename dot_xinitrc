@@ -58,5 +58,10 @@ clipmenud &
 session='i3 --shmlog-size 0'
 #session='bspwm'
 
+if [ "$session" == "bspwm" ]; then
+    sxhkd &
+fi
+
+
 # shellcheck disable=SC2086
 exec $session
