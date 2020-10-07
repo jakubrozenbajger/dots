@@ -58,8 +58,8 @@ clipmenud &
 session='i3 --shmlog-size 0'
 #session='bspwm'
 
-if [ "$session" == "bspwm" ]; then
-    sxhkd &
+if [ "$session" = "bspwm" ]; then
+    sxhkd &>> log &
 fi
 
 
