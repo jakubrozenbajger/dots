@@ -55,8 +55,8 @@ picom -b --experimental-backends &
 clipmenud &
 
 # select session
-session='i3 --shmlog-size 0'
-#session='bspwm'
+#session='i3 --shmlog-size 0'
+session='bspwm'
 
 if [ "$session" = "bspwm" ]; then
     sxhkd &>> log &
